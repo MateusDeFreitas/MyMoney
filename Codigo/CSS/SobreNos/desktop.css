@@ -10,7 +10,7 @@
 header
 {
     height: 100vh;
-    background-image: url(../../Recursos/imagemFundo.png);
+    background-image: url(/Recursos/imagemFundo.png);
 }
 #divEscurecedora
 {
@@ -65,6 +65,9 @@ header
 {
     color: var(--cor-dourado);
     transition: color 1s ease;
+}
+.active {
+    color: #FFD700;
 }
 #TituloPrincipal
 {

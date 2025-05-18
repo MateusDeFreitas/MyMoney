@@ -34,7 +34,7 @@ header {
 }
 
 #fundo {
-    background-image: url('../../Recursos/bg-geometrico.png');
+    background-image: url('/Recursos/bg-geometrico.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

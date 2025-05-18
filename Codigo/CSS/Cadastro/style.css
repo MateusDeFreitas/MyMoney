@@ -13,7 +13,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('../../Recursos/Img.Fundo.png');
+    background-image: url('/Recursos/Img.Fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,6 +119,11 @@
 
 .btn-cadastrar:hover {
     background-color: #bb9f00;
+}
+
+.btn-cadastrar a {
+    text-decoration: none;
+    color: #000;
 }
 
 .login-link {
