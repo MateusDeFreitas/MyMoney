@@ -7,80 +7,102 @@
     --cor-texto-padrao: #FFFFFF;
 }
 
-header
-{
+header {
+    display: block;
     height: 100vh;
-    background-image: url(/Recursos/imagemFundo.png);
 }
-#divEscurecedora
-{
-    height: 100vh;
-    background-color: var(--cor-fume);
+
+#fundo, #fume, #degrade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
-#divEscurecedoraGradiente
-{
-    height: 100vh;
-    background-image: linear-gradient(to top, black 0%, transparent 50%, transparent 100%);
+
+#fundo {
+    background-image: url('/Recursos/imagemFundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-#divMenu 
-{
+
+#fume {
+    background-color: #00000093;
+}
+
+#degrade {
+    padding: 0px 30px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#menu {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: space-between;
-    height: 100px;
-    padding: 0px 20px;
 }
-#spanIcone
-{
+
+.logo {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     align-items: center;
-    height: 100%;
+
 }
-#divMenu img 
-{
-    height: 50px;
-    width: auto;
-    margin-right: 30px;
+
+.logo img {
+    height: 60%;
 }
-#spanIcone p
-{
-    font-size: 1.3rem;
+
+.logo-text {
+    margin-left: 10px;
+    line-height: 20px;
+    font-size: 1.2rem;
 }
-#divMenu menu
-{
+
+nav {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
 }
-#divMenu menu p
-{
-    font-size: 1.5rem;
+
+nav ul {
+    display: flex;
+    list-style: none;
 }
-#divMenu menu p a
-{
-    margin-left: 50px;
+
+nav ul li {
+    margin-left: 30px;
 }
-#divMenu menu p a:hover
-{
-    color: var(--cor-dourado);
-    transition: color 1s ease;
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s;
 }
-.active {
+
+nav ul li a:hover {
     color: #FFD700;
 }
-#TituloPrincipal
-{
-    margin-top: 20vh;
-    margin-left: 2vw;
-    margin-bottom: 0px;
-    font-size: 9rem;
+
+nav ul li a.active {
+    color: #FFD700;
 }
-#subtitulo
-{
-    margin-left: 2vw;
-    font-size: 1.7rem;
-    color: var(--cor-subtitulo);
+
+.hero {
+    margin-top: 10%;
+}
+
+.hero h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    color: #9C9C9C;
 }
 
 #sessaoBlocos
