@@ -62,7 +62,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/SobreNos', (req, res) => {
-    fs.readFile(path.join(__dirname, 'sobreNos.html'), (err, data) => {
+    fs.readFile(path.join(__dirname, 'SobreNos.html'), (err, data) => {
         if (err) {
             res.status(500).send('500 - Erro interno do servidor' + err);
         } else {
@@ -71,6 +71,15 @@ app.get('/SobreNos', (req, res) => {
     });
 });
 
+app.get('/Estatisticas', (req, res) => {
+    fs.readFile(path.join(__dirname, 'Estatisticas.html'), (err, data) => {
+        if (err) {
+            res.status(500).send('500 - Erro interno do servidor' + err);
+        } else {
+            res.status(200).type('text/html').send(data);
+        }
+    });
+});
 
 // Configuração do server
 const PORT = 4500;
