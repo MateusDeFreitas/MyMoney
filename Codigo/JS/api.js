@@ -1,5 +1,5 @@
 function regatarDadosParaTabela(simbolo, elementoVariacao, elementoVolume, elementoValor) {
-    const chaveApi = 'K3FARVOC8G8NRQ8G';
+    const chaveApi = '559X65R48XYH6H0G';
     const funcao = 'TIME_SERIES_WEEKLY_ADJUSTED';
     const url = `https://www.alphavantage.co/query?function=${funcao}&symbol=${simbolo}&apikey=${chaveApi}`;
 
@@ -100,13 +100,16 @@ regatarVariacao('BBAS3.SAO', 'BBAS3Variacao');
 regatarVariacao('WEGE3.SAO', 'WEGE3Variacao');
 regatarVariacao('SUZB3.SAO', 'SUZB3Variacao');
 
+regatarVariacao('AERI3.SAO', 'AERI3Variacao');
+regatarVariacao('ARML3.SAO', 'ARML3Variacao');
+
 regatarVariacao('AAPL', 'AAPLVariacao');
 regatarVariacao('MSFT', 'MSFTVariacao');
 
 regatarVariacao('AMZN', 'AMZNVariacao');
 regatarVariacao('GOOGL', 'GOOGLVariacao');
 
-regatarVariacao('LREN3.SAO', 'NVDAVariacao');
+regatarVariacao('LREN3.SAO', 'LREN3Variacao');
 regatarVariacao('NVDA', 'NVDAVariacao');
 
 regatarVariacao('AZUL4.SAO', 'AZUL4Variacao');
@@ -119,4 +122,4 @@ regatarVariacao('TAEE11.SAO', 'TAEE11Variacao');
 regatarVariacao('KO', 'KOVariacao');
 
 regatarVariacao('NTCO3.SAO', 'NTCO3Variacao');
-regatarVariacao('Tesla', 'TeslaVariacao');
+regatarVariacao('TSLA', 'TSLAVariacao');
