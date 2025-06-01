@@ -223,3 +223,200 @@ th {
     border-radius: 50%;
     margin: 0 5px;
 }
+
+@media screen and (max-width: 1024px) {
+    #degrade {
+        padding: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    nav ul li {
+        margin-left: 15px;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+    
+    .cards {
+        padding: 1.5rem;
+    }
+    
+    .card {
+        min-width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #degrade {
+        padding: 15px;
+    }
+    
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .logo-text {
+        margin-left: 0;
+        font-size: 1.1rem;
+        line-height: 14px;
+    }
+    
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px;
+    }
+    
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 20px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 3.7rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .hero p {
+        font-size: 1.3rem;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .cards {
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+    
+    .card {
+        min-width: 140px;
+        padding: 0.8rem;
+    }
+    
+    .card h4 {
+        font-size: 1rem;
+    }
+    
+    .card .item span {
+        font-size: 0.9rem;
+    }
+    
+    .table-container {
+        padding: 0 1rem;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        font-size: 0.85rem;
+        padding: 0.6rem 0.5rem;
+    }
+    
+    .footer {
+        padding: 0 15px 40px;
+    }
+    
+    .footer-logo-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 11px;
+    }
+    
+    #degrade {
+        padding: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .cards {
+        padding: 0.8rem;
+    }
+    
+    .card {
+        min-width: 120px;
+        padding: 0.6rem;
+    }
+    
+    .card h4 {
+        font-size: 0.9rem;
+    }
+    
+    .card .item span {
+        font-size: 0.8rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+    
+    th, td {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #fundo, #fume, #degrade {
+        height: auto;
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
