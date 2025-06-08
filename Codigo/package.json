@@ -10,6 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "request": "^2.88.2"
+    "cheerio": "^1.0.0",
+    "nightmare": "^2.0.9",
+    "puppeteer": "^24.10.0",
+    "request": "^2.88.2",
+    "request-promise": "^0.0.1"
   }
 }
